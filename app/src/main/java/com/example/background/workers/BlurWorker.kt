@@ -33,6 +33,7 @@ class BlurWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params){
 
             val output = blurBitmap(picture, appContext)
 
+
             val outputUri = writeBitmapToFile(appContext, output)
 
             makeStatusNotification("Output is $outputUri", appContext)
